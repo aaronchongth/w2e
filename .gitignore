@@ -1,0 +1,4 @@
+/target
+src/*.py
+*.yaml
+!example.yaml
