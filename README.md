@@ -2,6 +2,8 @@
 
 Too many food options nearby and always have no idea where to go? `w2e` randomly picks a spot from an input list and displays it on your [MagicMirror](https://github.com/MichMich/MagicMirror). Anything else that needs to be randomized works too.
 
+![Screenshot](media/media.png)
+
 Set up a configuration `yaml` file and pass it in with the `-f` flag. An example is provided at [example.yaml](example.yaml).
 
 This program works with a `MagicMirror`, that has the [MMM-IFTTT](https://github.com/jc21/MMM-IFTTT) module installed.
