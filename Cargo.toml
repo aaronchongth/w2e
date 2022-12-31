@@ -1,13 +1,33 @@
 [package]
-name = "where_to_eat"
-version = "0.1.0"
+name = "w2e"
+version = "0.2.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+async-std = { version = "=1.12.0", default-features = false, features = [
+  "attributes",
+] }
+env_logger = "0.10.0"
+flume = "0.10.14"
+futures = "0.3.25"
+git-version = "0.3.5"
+json5 = "0.4.1"
+log = "0.4.17"
 rand = "0.8.5"
+reqwest = { version = "0.11", features = ["json"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_yaml = "0.9"
-ssh2 ="0.9"
+serde_json = "1.0.91"
 structopt = "0.3.21"
+zenoh = { version = "0.7.0-rc", default-features = true }
+zenoh-ext = { version = "0.7.0-rc" }
+
+[[bin]]
+name = "mirror_client"
+path = "src/mirror_client.rs"
+
+[[bin]]
+name = "randomizer"
+path = "src/randomizer.rs"

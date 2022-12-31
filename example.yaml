@@ -1,6 +1,3 @@
-host: "example.local"
-username: "admin"
-password: "admin"
 food_places:
   - "Ăn Là Ghiền"
   - "Banh mi"
